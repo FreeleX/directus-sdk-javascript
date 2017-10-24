@@ -140,6 +140,10 @@ class RemoteInstance {
   getTable(table = requiredParam('table'), params = {}) {
     return this._get(`tables/${table}`, params);
   }
+  
+  updateTable(table = requiredParam('table'), params = {}) {
+    return this._put(`tables/${table}`, params);
+  }
 
   // Columns
   // ----------------------------------------------------------------------------------
